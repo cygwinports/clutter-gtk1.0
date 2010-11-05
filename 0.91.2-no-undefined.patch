@@ -1,0 +1,22 @@
+--- origsrc/clutter-gtk-0.91.2/clutter-gtk/Makefile.am	2010-10-05 09:59:01.000000000 -0500
++++ src/clutter-gtk-0.91.2/clutter-gtk/Makefile.am	2010-11-05 14:01:43.374451300 -0500
+@@ -48,7 +48,7 @@ source_h_private = \
+ # please, keep the list sorted alphabetically
+ libclutter_gtk_@CLUTTER_GTK_API_VERSION@_la_SOURCES = $(source_c) $(source_h) $(source_h_private)
+ libclutter_gtk_@CLUTTER_GTK_API_VERSION@_la_LIBADD  = $(CLUTTER_LIBS) $(GTK_LIBS)
+-libclutter_gtk_@CLUTTER_GTK_API_VERSION@_la_LDFLAGS = $(CLUTTER_LT_LDFLAGS)
++libclutter_gtk_@CLUTTER_GTK_API_VERSION@_la_LDFLAGS = $(CLUTTER_GTK_LT_LDFLAGS)
+ 
+ cluttergtkheadersdir = $(includedir)/clutter-gtk-@CLUTTER_GTK_API_VERSION@/clutter-gtk
+ 
+--- origsrc/clutter-gtk-0.91.2/configure.ac	2010-10-05 10:09:32.000000000 -0500
++++ src/clutter-gtk-0.91.2/configure.ac	2010-11-05 14:00:06.532896900 -0500
+@@ -49,7 +49,7 @@ CLUTTER_GTK_LT_CURRENT=lt_current
+ CLUTTER_GTK_LT_REV=lt_revision
+ CLUTTER_GTK_LT_AGE=lt_age
+ CLUTTER_GTK_LT_VERSION="$CLUTTER_GTK_LT_CURRENT:$CLUTTER_GTK_LT_REV:$CLUTTER_GTK_LT_AGE"
+-CLUTTER_GTK_LT_LDFLAGS="-version-info $CLUTTER_GTK_LT_VERSION"
++CLUTTER_GTK_LT_LDFLAGS="-version-info $CLUTTER_GTK_LT_VERSION -no-undefined"
+ 
+ AC_SUBST(CLUTTER_GTK_LT_VERSION)
+ AC_SUBST(CLUTTER_GTK_LT_LDFLAGS)

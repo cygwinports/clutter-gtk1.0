@@ -1,0 +1,10 @@
+category: Gnome
+requires: libclutter-gtk1.0_0 girepository-Clutter1.0 girepository-GdkPixbuf2.0 girepository-Gtk3.0
+external-source: clutter-gtk1.0
+sdesc: "OpenGL-based animated GTK+ GUI library (GObjectIntrospection data)"
+ldesc: "Clutter is an open source software library for creating fast, 
+visually rich and animated graphical user interfaces.
+
+Clutter uses OpenGL for rendering but with an API which hides the 
+underlying GL complexity from the developer. The Clutter API is intended 
+to be easy to use, efficient and flexible."
