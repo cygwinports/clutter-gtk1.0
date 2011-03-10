@@ -1,5 +1,5 @@
 category: Gnome
-requires: libclutter1.0_0 libglib2.0_0 libgdk_pixbuf2.0_0 libgtk3.0_0
+requires: libcairo2 libclutter1.0_0 libglib2.0_0 libgdk_pixbuf2.0_0 libgtk3_0
 external-source: clutter-gtk1.0
 sdesc: "OpenGL-based animated GTK+ GUI library (runtime)"
 ldesc: "Clutter is an open source software library for creating fast, 
