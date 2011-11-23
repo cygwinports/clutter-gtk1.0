@@ -3,7 +3,6 @@ inherit gnome2
 
 DESCRIPTION="Clutter GTK+ integration library"
 HOMEPAGE="http://clutter-project.org/"
-SRC_URI="http://www.clutter-project.org/sources/${ORIG_PN}/${PV_MAJ_MIN}/${ORIG_PN}-${PV}.tar.bz2"
 
 PATCH_URI="1.0.0-no-undefined.patch"
 
