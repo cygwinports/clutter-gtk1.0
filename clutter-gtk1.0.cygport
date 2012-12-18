@@ -1,7 +1,16 @@
 ORIG_PN="clutter-gtk"
 inherit gnome2
 
-DESCRIPTION="Clutter GTK+ integration library"
+NAME="clutter-gtk1.0"
+VERSION=1.4.0
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="OpenGL-based animated GTK+ GUI library"
+DESCRIPTION="Clutter is an open source software library for creating fast,
+visually rich and animated graphical user interfaces. Clutter uses OpenGL for
+rendering but with an API which hides the underlying GL complexity from the
+developer. The Clutter API is intended to be easy to use, efficient and
+flexible."
 HOMEPAGE="http://clutter-project.org/"
 
 PATCH_URI="1.0.0-no-undefined.patch"
