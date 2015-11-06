@@ -2,7 +2,7 @@ ORIG_PN="clutter-gtk"
 inherit gnome2
 
 NAME="clutter-gtk1.0"
-VERSION=1.6.0
+VERSION=1.6.6
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OpenGL-based animated GTK+ GUI library"
@@ -13,13 +13,10 @@ developer. The Clutter API is intended to be easy to use, efficient and
 flexible."
 HOMEPAGE="http://clutter-project.org/"
 
-PATCH_URI="1.0.0-no-undefined.patch"
-
 PKG_NAMES="lib${NAME}_0 lib${NAME}-devel lib${NAME}-doc girepository-GtkClutter1.0"
 libclutter_gtk1_0_0_CONTENTS="usr/bin/*-1.0-0.dll usr/share/doc/ usr/share/locale/"
+libclutter_gtk1_0_devel_REQUIRES="girepository-GtkClutter1.0"
 libclutter_gtk1_0_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 libclutter_gtk1_0_doc_CATEGORY="Doc"
 libclutter_gtk1_0_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_GtkClutter1_0_CONTENTS="usr/*/gir*/GtkClutter-1.0.*"
-
-CYGCONF_ARGS="--with-flavour=x11"
